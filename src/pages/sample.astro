@@ -1,0 +1,20 @@
+---
+import Layout from "../components/layout.astro";
+import { Upwork1 } from "../email/upwork-1";
+---
+
+<Layout>
+  <Upwork1 client:load />
+</Layout>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans&display=swap");
+  :root {
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: black;
+  }
+</style>
