@@ -12,10 +12,12 @@ import {
 } from "@react-email/components";
 
 interface SampleEmailProps {
-  userFirstname: string;
+  userFirstname?: string;
 }
 
-export const SampleEmail = ({ userFirstname = "Zeno" }: SampleEmailProps) => (
+export const SampleEmail = ({
+  userFirstname = "Constantine",
+}: SampleEmailProps) => (
   <Html>
     <Head />
     <Preview>
@@ -58,6 +60,7 @@ export default SampleEmail;
 
 const main = {
   backgroundColor: "#ffffff",
+  color: "#000",
   fontFamily:
     '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
 };
